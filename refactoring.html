@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agile Dashboards</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--Icons-->
+<script src="js/lumino.glyphs.js"></script>
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span>Dahsboard</span>Admin</a>
+			</div>
+							
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+
+		<ul class="nav menu">
+			<li><a href="standup.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Stand Up meetings</a></li>
+			<li><a href="pairprogramming.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Pair programming</a></li>
+			<li><a href="tdd.html"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg>TDD</a></li>
+			<li><a href="automated.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Automated testing</a></li>
+			<li><a href="refactoring.html"><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Refactoring</a></li>
+			<li><a href="delivery.html"><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Continuous Delivery</a></li>
+			</ul>
+		</ul>
+
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
+		
+		<div class="row">
+		<div class="col-lg-12">
+				<h1 class="page-header">Refactoring</h1>
+			</div>
+
+		</div><!--/.row-->		
+	
+		
+		<div class="row">
+			
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Improved performance:</h4>
+						<div class="easypiechart" id="easypiechart-blue" data-percent="12,03" ><span class="percent">12,03%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Improved Maintability:</h4>
+						<div class="easypiechart" id="easypiechart-orange" data-percent="29,9" ><span class="percent">29,9%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Improved readability:</h4>
+						<div class="easypiechart" id="easypiechart-teal" data-percent="43,3" ><span class="percent">43,3%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Fewer bugs:</h4>
+						<div class="easypiechart" id="easypiechart-red" data-percent="26,8" ><span class="percent">26,8%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Code size reduction:</h4>
+						<div class="easypiechart" id="easypiechart-blue1" data-percent="6,19" ><span class="percent">6,19%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Easier to add feature:</h4>
+						<div class="easypiechart" id="easypiechart-orange1" data-percent="27,15" ><span class="percent">27,15%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Improved modularity:</h4>
+						<div class="easypiechart" id="easypiechart-teal1" data-percent="18,56" ><span class="percent">18,56%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Reduced time to market:</h4>
+						<div class="easypiechart" id="easypiechart-red1" data-percent="5,5" ><span class="percent">5,5%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-lg-12">
+
+				<div class="panel-heading">ROI calculation</div>
+				<div class="panel-body">
+			<table style="width:100%">
+<tr>
+<td>Technical debt</td>
+<td> <input type="text" id="field1" value=""></td>
+</tr>
+
+
+<tr>
+<td>Desired Effort:</td>
+<td><input type="text" id="field2" value=""></td>
+</tr>
+
+<tr>
+<td>Days a person works per year:</td>
+<td> <input type="text" id="field3" value=""></td>
+</tr>
+
+<tr>
+<td>How many people in the team:
+</td>
+<td> <input type="text" id="field4" value=""></td>
+</tr>
+
+
+<tr>
+<td>
+<br>
+<button onclick="myFunction()">Calculate</button><br></td>
+</tr>
+
+<tr>
+<td><br>ROI:</td>
+<td><input type="text" id="roi"></td>
+</tr>
+</table>
+
+<script>
+function myFunction() {
+var a=parseInt(document.getElementById("field1").value);
+var b=parseInt(document.getElementById("field2").value);
+var c=parseInt(document.getElementById("field3").value);
+var d=parseInt(document.getElementById("field4").value);
+var decrease=b/a*100;
+var  eff = c*d;
+var result = b/eff*100;
+    document.getElementById("roi").value = result;
+}
+</script>
+</div>
+</div>
+		</div>	
+
+		
+		
+	</div><!--/.main-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data-refact.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		!function ($) {
+			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
+				$(this).find('em:first').toggleClass("glyphicon-minus");	  
+			}); 
+			$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+</body>
+
+</html>
